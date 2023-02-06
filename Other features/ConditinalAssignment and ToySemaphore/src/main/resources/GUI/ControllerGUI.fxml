@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="numberOfPrograms" layoutX="221.0" layoutY="16.0" prefHeight="31.0" prefWidth="72.0" />
+      <Label layoutX="21.0" layoutY="21.0" text="Number of Program States" />
+      <TableView fx:id="heapTable" layoutX="21.0" layoutY="123.0" prefHeight="136.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="heapTableAddress" prefWidth="102.0" text="Address" />
+          <TableColumn fx:id="heapTableValue" prefWidth="97.0" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="outputList" layoutX="261.0" layoutY="123.0" prefHeight="136.0" prefWidth="200.0" />
+      <ListView fx:id="fileTable" layoutX="498.0" layoutY="123.0" prefHeight="136.0" prefWidth="200.0" />
+      <ListView fx:id="programStatesList" layoutX="21.0" layoutY="339.0" prefHeight="136.0" prefWidth="200.0" />
+      <Label layoutX="21.0" layoutY="95.0" text="HeapTable" />
+      <Label layoutX="261.0" layoutY="95.0" text="Out" />
+      <Label layoutX="498.0" layoutY="95.0" text="FileTable" />
+      <Label layoutX="21.0" layoutY="305.0" text="Program State identifiers" />
+      <Label layoutX="256.0" layoutY="305.0" text="SymTable" />
+      <TableView fx:id="symbolTable" layoutX="256.0" layoutY="339.0" prefHeight="136.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="symbolTableVariable" prefWidth="115.0" text="Variable Name" />
+          <TableColumn fx:id="symbolTableValue" prefWidth="84.0" text="Value" />
+        </columns>
+      </TableView>
+      <Button fx:id="runButton" layoutX="586.0" layoutY="16.0" mnemonicParsing="false" text="Run One Step" />
+      <ListView fx:id="executionStack" layoutX="498.0" layoutY="339.0" prefHeight="136.0" prefWidth="200.0" />
+      <Label layoutX="498.0" layoutY="305.0" text="ExeStack" />
+      <TableView fx:id="semaphoreTable" layoutX="21.0" layoutY="529.0" prefHeight="136.0" prefWidth="679.0">
+        <columns>
+          <TableColumn fx:id="semaphoreTableIndex" prefWidth="130.0" text="Index" />
+          <TableColumn fx:id="semaphoreTableValue1" prefWidth="155.0" text="Value" />
+            <TableColumn fx:id="semaphoreTableListOfValues" prefWidth="232.0" text="List of Values" />
+            <TableColumn fx:id="semaphoreTableValue2" prefWidth="161.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="496.0" text="Semaphore Table" />
+   </children>
+</Pane>
